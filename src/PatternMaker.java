@@ -11,6 +11,7 @@ public class PatternMaker {
         pattern3();
         pattern5();
         pattern6();
+        pattern7();
     }
 
     public void pattern1() {
@@ -47,8 +48,19 @@ public class PatternMaker {
     }
 
     public void pattern6() {
-        for (int e = 0; e < 5; e++) {
-            for (int p = 1; p < 5; p++) {
+        for (int p = 1; p < 6; p++) {
+            for (int f = 1; f < p; f++) {
+                System.out.print(" ");
+            }
+            System.out.println(p);
+
+        }
+    }
+
+    public void pattern7() {
+        for (int p = 1; p < 6; p++) {
+            for (int f = 0; f < 6-p; f++) {
+                System.out.print(p);
             }
             System.out.println();
         }
